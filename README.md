@@ -36,6 +36,8 @@ For more information, please check the [PDF](./public/challenge.pdf).
 - React Testing Library
 - Tailwind
 
+- Git Commits follow https://gitmoji.dev/
+
 ## 📂 Folder structure
 
 ```
