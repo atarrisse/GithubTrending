@@ -89,17 +89,12 @@ Stack: [Jest](https://jestjs.io/) + [React Testing Library](https://testing-libr
 
 Due to time contraint E2E tests were not implements.
 
-Tests suggested:
-- Star Button feature flow
-- Language filter flow
-
 
 ## 👣 Next steps
 
-- Language filter
-- Setup Integration tests
-- Setup accessibility tests with Axe
-- Setup eslint configuration
-- Setup prettier for Tailwind
+- Integration tests
+- Accessibility tests with Axe
+- Eslint configuration
+- Prettier for Tailwind
 - Improve Error handling
 
