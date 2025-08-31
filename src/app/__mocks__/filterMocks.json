@@ -1,0 +1,28 @@
+{
+  "languages": [
+    "All",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Java",
+    "Go",
+    "Rust"
+  ],
+  "languageChangeEvents": {
+    "javascript": {
+      "target": {
+        "value": "JavaScript"
+      }
+    },
+    "typescript": {
+      "target": {
+        "value": "TypeScript"
+      }
+    },
+    "python": {
+      "target": {
+        "value": "Python"
+      }
+    }
+  }
+}
