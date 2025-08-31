@@ -1,5 +1,4 @@
 import config from '@/app/config';
-import { useDateRange } from '@/app/hooks/useDateRange';
 import { type Language } from '@/app/constants';
 
 export type GitHubRepository = {
@@ -28,8 +27,11 @@ export type GitHubSearchResponse = {
 async function fetchTrendingRepos(language?: Language): Promise<GitHubRepository[]> {
   const baseUrl = config.GITHUB_API_URL;
   
-  // Get date range for last week using hook
-  const { begin, end } = useDateRange();
+  // Get date range for last week
+  const now = new Date();
+  const lastWeek = new Date(now.getTime() - config.FETCH_PERIOD);
+  const begin = lastWeek.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+  const end = now.toISOString().split('T')[0];
 
   // Build search query for repositories created in the last week, sorted by stars
   let query = `pushed:>=${begin} pushed:<=${end} stars:>0`;
