@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { fetchTrendingRepos, type GitHubRepository } from '@/app/data';
 import { type Language } from '@/app/constants';
 
@@ -21,7 +21,7 @@ export const useRepoData = (selectedLanguage: Language = 'All'): UseRepoDataRetu
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const loadRepos = async () => {
+  const loadRepos = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
@@ -32,11 +32,11 @@ export const useRepoData = (selectedLanguage: Language = 'All'): UseRepoDataRetu
     } finally {
       setLoading(false);
     }
-  };
+  }, [selectedLanguage]);
 
   useEffect(() => {
     loadRepos();
-  }, [selectedLanguage]);
+  }, [selectedLanguage, loadRepos]);
 
   const refetch = async () => {
     await loadRepos();

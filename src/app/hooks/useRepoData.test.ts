@@ -1,6 +1,7 @@
 import { renderHook, waitFor } from '@testing-library/react';
 import { useRepoData } from './useRepoData';
 import * as fetchTrendingReposModule from '@/app/data/fetchTrendingRepos';
+import { type Language } from '@/app/constants';
 import mockRepositories from '@/app/__mocks__/mockRepositories.json';
 
 // Mock the fetchTrendingRepos function
@@ -53,8 +54,8 @@ describe('useRepoData', () => {
     mockFetchTrendingRepos.mockResolvedValue(mockRepositories);
 
     const { result, rerender } = renderHook(
-      ({ language }: { language: any }) => useRepoData(language),
-      { initialProps: { language: 'JavaScript' } }
+      ({ language }: { language: Language }) => useRepoData(language),
+      { initialProps: { language: 'JavaScript' as Language } }
     );
 
     await waitFor(() => {
@@ -63,7 +64,7 @@ describe('useRepoData', () => {
 
     expect(mockFetchTrendingRepos).toHaveBeenCalledWith('JavaScript');
 
-    rerender({ language: 'Python' });
+    rerender({ language: 'Python' as Language });
 
     expect(result.current.loading).toBe(true);
 
