@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Redcare Pharmacy Challenge
 
-## Getting Started
+Frontend Coding Challenge for Redcare Pharmacy.
 
-First, run the development server:
+## Task requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+> The idea of this project is to implement a small client application for discovering trending repositories on GitHub.
+
+> A list of the most popular repositories of the last week should be displayed and the user should be able to star them. The starred repositories should be visible either through a filter or in a different tab. Some basic information about the repo should be displayed, such as: repo name, link to GitHub, description and number of stars. To keep things simple, the starring won’t be sent back to GitHub’s servers but just stored in local storage.
+
+
+For more information, please check the [PDF](./public/challenge.pdf).
+
+
+## 💻 Setup and run
+
+
+1. ‼️ Make sure you have the `.env` file on the root of the project. There's an `env.example` from which you can setup the variables.
+
+
+1. Download and install this repo
+
+   `npm i`
+
+
+1. Run the project locally
+
+   `npm run dev`
+
+## 📚 Stack
+
+- React
+- Typescript
+- NextJS
+- Jest
+- React Testing Library
+- Tailwind
+
+## 📂 Folder structure
+
+```
+🚨 `index` files only do import/exports
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+.
+├── assets
+├── public
+├── src
+│   └── app
+│       ├── __mocks__   // mocks for tests
+│       ├── assets  
+│       ├── components  // components to be used in multiple places
+│       ├── config  
+│       ├── data        // Backend communication
+│       ├── hooks
+│       ├── globals.css
+│       ├── layout.tsx
+│       └── page.tsx
+├── ...
+├── .env
+├── .nvmrc
+└── package.json
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Component
 
-## Learn More
+```
+.
+└── Component
+    ├── Component.tsx     // implementation
+    ├── Component.test.tsx // unit test
+    └── index.tsx          // exports
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Due to limited time constraints, the tool of choice was inline Tailwind to gain speed. A trade-off is that this approach makes it harder to read and debug styles. Using tools like prettier may help with that.
+My preferred architecture would be using CSS modules, creating a Component.style.ts file, for the encapsulation and flexibility it provides.
 
-## Deploy on Vercel
+## 🧪 Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Stack: [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Integration test
+
+Due to time contraint E2E tests were not implements.
+
+Tests suggested:
+- Star Button feature flow
+- Language filter flow
+
+
+## 👣 Next steps
+
+- Language filter
+- Setup Integration tests
+- Setup accessibility tests with Axe
+- Setup eslint configuration
+- Setup prettier for Tailwind
+- Improve Error handling
+
