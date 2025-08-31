@@ -25,14 +25,14 @@ const RepoCardListContainer = () => {
     <div>
       <div className='flex flex-col sm:flex-row gap-4 sm:justify-between'>
         <Button
-          className='w-52'
+          className='w-full sm:w-52'
           onClick={() => setIsStarredFilterEnabled(prev => !prev)}
           variant={isStarredFilterEnabled ? 'primary' : 'secondary'}
         >
           Starred Repositories
         </Button>
 
-        <div className='w-100'>
+        <div className='w-full sm:w-auto'>
           <Filter
             selectedLanguage={selectedLanguage}
             onLanguageChange={setSelectedLanguage}
