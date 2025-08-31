@@ -1,0 +1,50 @@
+{
+  "mockRepo123": {
+    "id": 123,
+    "name": "awesome-repo",
+    "full_name": "user/awesome-repo",
+    "html_url": "https://github.com/user/awesome-repo",
+    "description": "An awesome repository for testing",
+    "stargazers_count": 1000,
+    "language": "TypeScript",
+    "created_at": "2024-12-15T12:00:00Z",
+    "updated_at": "2024-12-20T12:00:00Z",
+    "owner": {
+      "login": "user",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12345?v=4",
+      "html_url": "https://github.com/user"
+    }
+  },
+  "mockRepo456": {
+    "id": 456,
+    "name": "another-repo",
+    "full_name": "dev/another-repo",
+    "html_url": "https://github.com/dev/another-repo",
+    "description": "Another test repository",
+    "stargazers_count": 500,
+    "language": "JavaScript",
+    "created_at": "2024-12-10T10:00:00Z",
+    "updated_at": "2024-12-18T10:00:00Z",
+    "owner": {
+      "login": "dev",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67890?v=4",
+      "html_url": "https://github.com/dev"
+    }
+  },
+  "mockRepo789": {
+    "id": 789,
+    "name": "test-repo",
+    "full_name": "tester/test-repo",
+    "html_url": "https://github.com/tester/test-repo",
+    "description": "A third test repository",
+    "stargazers_count": 250,
+    "language": "Python",
+    "created_at": "2024-12-05T08:00:00Z",
+    "updated_at": "2024-12-16T08:00:00Z",
+    "owner": {
+      "login": "tester",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13579?v=4",
+      "html_url": "https://github.com/tester"
+    }
+  }
+}
