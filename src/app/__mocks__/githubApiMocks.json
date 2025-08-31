@@ -1,0 +1,127 @@
+{
+  "singleRepository": {
+    "total_count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "id": 123456,
+        "name": "awesome-repo",
+        "full_name": "user/awesome-repo",
+        "html_url": "https://github.com/user/awesome-repo",
+        "description": "An awesome repository for testing",
+        "stargazers_count": 1000,
+        "language": "TypeScript",
+        "created_at": "2024-12-15T12:00:00Z",
+        "updated_at": "2024-12-20T12:00:00Z",
+        "owner": {
+          "login": "user",
+          "avatar_url": "https://avatars.githubusercontent.com/u/12345?v=4",
+          "html_url": "https://github.com/user"
+        }
+      }
+    ]
+  },
+  "multipleRepositories": {
+    "total_count": 3,
+    "incomplete_results": false,
+    "items": [
+      {
+        "id": 1,
+        "name": "trending-repo-1",
+        "full_name": "awesome-org/trending-repo-1",
+        "html_url": "https://github.com/awesome-org/trending-repo-1",
+        "description": "First trending repository",
+        "stargazers_count": 5000,
+        "language": "JavaScript",
+        "created_at": "2024-12-14T08:00:00Z",
+        "updated_at": "2024-12-19T08:00:00Z",
+        "owner": {
+          "login": "awesome-org",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1?v=4",
+          "html_url": "https://github.com/awesome-org"
+        }
+      },
+      {
+        "id": 2,
+        "name": "trending-repo-2",
+        "full_name": "dev-user/trending-repo-2",
+        "html_url": "https://github.com/dev-user/trending-repo-2",
+        "description": null,
+        "stargazers_count": 3500,
+        "language": null,
+        "created_at": "2024-12-13T10:30:00Z",
+        "updated_at": "2024-12-18T10:30:00Z",
+        "owner": {
+          "login": "dev-user",
+          "avatar_url": "https://avatars.githubusercontent.com/u/2?v=4",
+          "html_url": "https://github.com/dev-user"
+        }
+      },
+      {
+        "id": 3,
+        "name": "trending-repo-3",
+        "full_name": "tech-company/trending-repo-3",
+        "html_url": "https://github.com/tech-company/trending-repo-3",
+        "description": "Third repository with Python",
+        "stargazers_count": 2800,
+        "language": "Python",
+        "created_at": "2024-12-16T14:45:00Z",
+        "updated_at": "2024-12-21T14:45:00Z",
+        "owner": {
+          "login": "tech-company",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3?v=4",
+          "html_url": "https://github.com/tech-company"
+        }
+      }
+    ]
+  },
+  "emptyResults": {
+    "total_count": 0,
+    "incomplete_results": false,
+    "items": []
+  },
+  "incompleteResults": {
+    "total_count": 100,
+    "incomplete_results": true,
+    "items": [
+      {
+        "id": 999,
+        "name": "partial-repo",
+        "full_name": "test-org/partial-repo",
+        "html_url": "https://github.com/test-org/partial-repo",
+        "description": "Repository from incomplete search",
+        "stargazers_count": 750,
+        "language": "Go",
+        "created_at": "2024-12-17T16:00:00Z",
+        "updated_at": "2024-12-22T16:00:00Z",
+        "owner": {
+          "login": "test-org",
+          "avatar_url": "https://avatars.githubusercontent.com/u/999?v=4",
+          "html_url": "https://github.com/test-org"
+        }
+      }
+    ]
+  },
+  "errorResponses": {
+    "forbidden": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "message": "API rate limit exceeded"
+    },
+    "rateLimited": {
+      "status": 422,
+      "statusText": "Unprocessable Entity",
+      "message": "Validation Failed"
+    },
+    "tooManyRequests": {
+      "status": 429,
+      "statusText": "Too Many Requests",
+      "message": "You have exceeded the rate limit"
+    },
+    "serverError": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "message": "Something went wrong"
+    }
+  }
+}
