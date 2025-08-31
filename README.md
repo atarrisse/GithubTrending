@@ -2,6 +2,8 @@
 
 Frontend Coding Challenge for Redcare Pharmacy.
 
+![Application Screenshot](./public/Screenshot.png)
+
 ## Task requirements
 
 > The idea of this project is to implement a small client application for discovering trending repositories on GitHub.
@@ -29,6 +31,9 @@ For more information, please check the [PDF](./public/challenge.pdf).
 
 ## 📚 Stack
 
+🚨 Commits messages follow https://gitmoji.dev/
+
+
 - React
 - Typescript
 - NextJS
@@ -36,13 +41,11 @@ For more information, please check the [PDF](./public/challenge.pdf).
 - React Testing Library
 - Tailwind
 
-- Git Commits follow https://gitmoji.dev/
+
 
 ## 📂 Folder structure
 
-```
 🚨 `index` files only do import/exports
-```
 
 ### Application
 
